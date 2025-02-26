@@ -4,13 +4,12 @@
 
 url: https://www.getroxanne.com
 title: Roxanne
-email: your-email@domain.com
-author: Roxanne
-description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description.
-copyright: 'Copyright &copy; 2025 A Million Dreams LLC. All Rights Reserved.'
+email: contact@getroxanne.com
+author: Roxanne Team
+description: > # 
+  Roxanne is your AI dating communication coach, helping thoughtful adults navigate 
+  modern dating with confidence, authenticity, and emotional intelligence.
+copyright: 'Copyright &copy; 2024 A Million Dreams LLC. All Rights Reserved.'
 credits: 
 
 # ----------------------- #
@@ -28,7 +27,10 @@ permalink: pretty
 social:
   - title: twitter
     url: https://twitter.com/getroxanne
-  - title: tiktok
-    url: 
+    icon: fa-brands fa-twitter
   - title: instagram
-    url: 
+    url: https://instagram.com/getroxanne
+    icon: fa-brands fa-instagram
+  - title: tiktok
+    url: https://tiktok.com/@getroxanne
+    icon: fa-brands fa-tiktok
