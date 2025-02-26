@@ -24,16 +24,25 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
 /* Navigation */
 .navbar-default {
     background-color: var(--primary-color);
-    border-color: rgba(0,0,0,0.1);
+    border-color: transparent;
+    padding: 10px 0;
 }
 
 .navbar-default .navbar-brand {
     color: var(--white);
     font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: var(--white);
 }
 
 .navbar-default .navbar-nav > li > a {
     color: var(--white);
+    font-weight: 500;
+    padding: 15px 10px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -50,6 +59,14 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
     padding: 12px 24px;
     border-radius: 4px;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.btn.cta-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .cta-button:hover,
@@ -68,22 +85,32 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
 
 .section-divider {
     background: var(--accent-color);
-    height: 3px;
-    width: 60px;
-    margin: 20px auto;
+    height: 2px;
+    width: 80px;
+    margin: 20px auto 30px;
 }
 
 /* Feature Icons */
 .feature-icon {
     color: var(--accent-color);
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 20px;
+}
+
+.feature-box {
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .feature-box h3 {
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 .icon-feature {
@@ -113,19 +140,47 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
 }
 
 /* Footer */
-.footer-social-buttons .btn-social-icon {
+footer {
     background-color: var(--primary-color);
     color: var(--white);
+    padding: 20px 0;
 }
 
-.footer-social-buttons .btn-social-icon:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color);
+footer .copyright {
+    color: var(--white);
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    color: #C99418; /* Darker gold */
+    text-decoration: none;
+}
+
+.footer-social-buttons {
+    margin: 5px 0;
+}
+
+.footer-social-buttons li {
+    margin: 0 5px;
+}
+
+.footer-social-buttons .social-link {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.footer-social-buttons .social-link:hover {
+    color: var(--accent-color);
 }
 
 /* Section Backgrounds */
 .features-section {
-    background-color: var(--secondary-color);
+    background-color: #f9f5f6; /* Light pink/sand color from screenshot */
     padding: 80px 0;
 }
 
@@ -140,7 +195,10 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: var(--white);
-    background: url(../img/mature-couple-dating.jpg) no-repeat center center;
+    background-color: var(--primary-color); /* Fallback solid color */
+    background-image: linear-gradient(135deg, #4A154B 10%, #663366 50%, #9370DB 90%); /* Purple gradient matching screenshot */
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -152,7 +210,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, rgba(74, 21, 75, 0.8), rgba(74, 21, 75, 0.6));
+    background: linear-gradient(to right, rgba(74, 21, 75, 0.2), rgba(102, 51, 102, 0.2)); /* Very subtle overlay */
     z-index: 1;
 }
 
@@ -199,20 +257,4 @@ body {
 .waitlist-heading {
     color: var(--white);
     margin-bottom: 20px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 40px 0;
-}
-
-footer a {
-    color: var(--accent-color);
-}
-
-footer a:hover {
-    color: #C99418; /* Darker gold */
-    text-decoration: none;
 } 
