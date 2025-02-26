@@ -3,13 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p>&copy; 2023 Roxanne. All Rights Reserved.</p>
+                <p class="copyright">{{ site.copyright }}</p>
             </div>
             <div class="col-md-6 text-right">
                 <ul class="list-inline footer-social-buttons">
                     {% for social in site.social %}
                     <li>
-                        <a href="{{ social.url }}" class="social-link">
+                        <a href="{{ social.url }}" class="social-link" target="_blank">
                             <i class="{{ social.icon }}"></i>
                         </a>
                     </li>
