@@ -3,27 +3,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">{{ site.copyright }}</p>
+                <p class="copyright">© 2025 Roxanne. All Rights Reserved.</p>
             </div>
             <div class="col-md-4">
-                {{ site.credits }}
+                <ul class="list-inline footer-social-buttons">
+                    {% for social in site.social %}
+                    <li>
+                        <a href="{{ social.url }}" class="btn btn-social-icon"><i class="fa fa-{{ social.title }} fa-fw"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>

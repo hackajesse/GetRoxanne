@@ -1,8 +1,8 @@
 ---
 layout: default
-img: phones.png
+img: skill-building.png
 category: Services
-title: Google Web Fonts and<br>Font Awesome Icons
+title: Build Dating Communication Skills
 description: |
 ---
-This template features the 'Lato' font, part of the [Google Web Font library](http://www.google.com/fonts), as well as [icons from Font Awesome](http://fontawesome.io).
+Beyond just helping with messages, Roxanne helps you develop better communication skills over time. Learn why certain approaches work better than others and gain insights into effective dating communication principles that you can apply beyond the app.
