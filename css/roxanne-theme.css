@@ -1,0 +1,218 @@
+/**
+ * Roxanne Updated Theme Styling
+ * Updated color scheme and styling based on refined brand guidelines
+ */
+
+:root {
+    /* New Color Palette */
+    --primary-color: #4A154B; /* Deep Aubergine */
+    --secondary-color: #F5E6E8; /* Warm Sand */
+    --accent-color: #DAA520; /* Burnished Gold */
+    --success-color: #7C9082; /* Sage */
+    --alert-color: #E88D67; /* Muted Coral */
+    --text-color: #2C363F; /* Deep Slate */
+    --white: #FFFFFF;
+}
+
+/* Apply new font to all elements */
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Apply the new color scheme */
+
+/* Navigation */
+.navbar-default {
+    background-color: var(--primary-color);
+    border-color: rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-brand {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: var(--white);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--accent-color);
+}
+
+/* CTA Buttons */
+.cta-button {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #C99418; /* Darker gold */
+    color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Section Headings */
+.section-heading {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.section-divider {
+    background: var(--accent-color);
+    height: 3px;
+    width: 60px;
+    margin: 20px auto;
+}
+
+/* Feature Icons */
+.feature-icon {
+    color: var(--accent-color);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.icon-feature {
+    color: var(--primary-color);
+}
+
+/* Social Buttons */
+.intro-social-buttons .btn-default {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.intro-social-buttons .btn-default:hover {
+    background-color: #C99418; /* Darker gold */
+    transform: translateY(-2px);
+}
+
+.social-link {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.footer-social-buttons .btn-social-icon {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.footer-social-buttons .btn-social-icon:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* Section Backgrounds */
+.features-section {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+
+/* Base Text Color */
+body {
+    color: var(--text-color);
+}
+
+/* Header/Intro Section */
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--white);
+    background: url(../img/mature-couple-dating.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.intro-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(74, 21, 75, 0.8), rgba(74, 21, 75, 0.6));
+    z-index: 1;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    z-index: 2;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    font-size: 4em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-weight: 700;
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-weight: 400;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 25px auto;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+/* Waitlist Section */
+.waitlist-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.waitlist-heading {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    color: #C99418; /* Darker gold */
+    text-decoration: none;
+} 

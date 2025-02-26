@@ -2,14 +2,16 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <p class="copyright">© 2025 Roxanne. All Rights Reserved.</p>
+            <div class="col-md-6">
+                <p>&copy; 2023 Roxanne. All Rights Reserved.</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 text-right">
                 <ul class="list-inline footer-social-buttons">
                     {% for social in site.social %}
                     <li>
-                        <a href="{{ social.url }}" class="btn btn-social-icon"><i class="{{ social.icon }}"></i></a>
+                        <a href="{{ social.url }}" class="social-link">
+                            <i class="{{ social.icon }}"></i>
+                        </a>
                     </li>
                     {% endfor %}
                 </ul>
