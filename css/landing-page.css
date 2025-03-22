@@ -253,14 +253,15 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Ensure no conflicting styles for intro-message h1 */
+.intro-message h1 {
+    font-size: unset; /* Reset any existing font size */
+}
+
 /* Responsive styles */
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
     }
 
     .intro-divider {
@@ -283,15 +284,7 @@ footer {
 }
 
 @media(max-width:480px) {
-    .intro-message > h1 {
-        font-size: 2.5em;
-    }
-    
     .intro-message > h3 {
-        font-size: 1.5em;
-    }
-    
-    .cta-button {
-        width: 100%;
+        font-size: 1.5rem;
     }
 }
