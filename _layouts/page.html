@@ -3,11 +3,24 @@
 	{% include head.html %}
 
 	<body>
+		{% if page.show_header != false %}
 		{% include header.html %}
+		{% endif %}
+		
+		{% if page.show_content_wrapper != false %}
 		<div style="padding-top: 100px; padding-bottom: 100px;">
 			{{ content }}
 		</div>
+		{% else %}
+			{{ content }}
+		{% endif %}
+		
+		{% if page.show_footer != false %}
 		{% include footer.html %}
+		{% endif %}
+		
+		{% if page.show_js != false %}
 		{% include js.html %}
+		{% endif %}
 	</body>
 </html> 
